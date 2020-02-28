@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(content: params[:content])
     if @post.save
-      flash[:notice]="作成したよ"
+      flash[:notice]="作成しますた"
       redirect_to("/posts/index")
     else
       render("posts/new")
@@ -29,7 +29,7 @@ class PostsController < ApplicationController
     @post =Post.find_by(id: params[:id])
     @post.content = params[:content]
     if @post.save
-      flash[:notice]="編集完了したよ！"
+      flash[:notice]="編集完了しました！！！！！！！！！！！！！！！"
       redirect_to("/posts/index")
     else 
       render("posts/edit")
