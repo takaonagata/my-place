@@ -11,27 +11,52 @@
   <body>
     <header>
       <div class="header-logo">
-        <%= link_to("MY-PLACE","/") %>
+        <% if @current_user %>
+          <%= link_to("MY=PLACE", "/posts/index") %>
+        <% else %>
+          <%= link_to("MY-PLACE", "/") %>
+        <% end %>
       </div>
       <ul class="header-menus">
-        <li>
-         <%= link_to("初めての方へ","/about") %>
-        </li>
-        <li>
-          <%= link_to("投稿一覧","/posts/index") %>
-        </li>
-        <li>
-          <%= link_to("新規投稿", "/posts/new") %>
-        </li>
-        <li>
-         <%= link_to("何かのボタン","/")%>
+        <% if @current_user %>
+          <li>
+            <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
+          </li>
+          <!-- ログインしている状態でヘッダーに表示するHTML -->
+          <li>
+            <%= link_to("投稿一覧", "/posts/index") %>
+          </li>
+          <li>
+            <%= link_to("新規投稿", "/posts/new") %>
+          </li>
+          <li>
+            <%= link_to("ユーザー一覧", "/users/index") %>
+          </li>
+          <li>
+            <!-- ログアウト用のリンク -->
+            <%= link_to("ログアウト", "/logout", {method: :post}) %>
+          </li>
+        <% else %>
+          <!-- ログインしていない状態でヘッダーに表示するHTML -->
+          <li>
+            <%= link_to("初めての方へ", "/about") %>
+          </li>
+          <li>
+            <%= link_to("新規登録", "/signup") %>
+          </li>
+          <li>
+            <%= link_to("ログイン", "/login") %>
+          </li>
+        <% end %>
       </ul>
     </header>
-    <% if flash[:notice]%>
+
+    <% if flash[:notice] %>
       <div class="flash">
         <%= flash[:notice] %>
       </div>
-    <% end%>
+    <% end %>
+    
     <%= yield %>
   </body>
 </html>
