@@ -6,13 +6,15 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
     <header>
       <div class="header-logo">
         <% if @current_user %>
-          <%= link_to("MY=PLACE", "/posts/index") %>
+          <%= link_to("MY-PLACE", "/posts/index") %>
         <% else %>
           <%= link_to("MY-PLACE", "/") %>
         <% end %>
