@@ -1,24 +1,81 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# MY-PLACE
 
-Things you may want to cover:
+ユーザー同士での投稿アプリ
 
-* Ruby version
+## 概要
 
-* System dependencies
+- 登録されたユーザーにしか投稿をられず、不特定多数の人に投稿をみられたく無い人向けのアプリです</br>
+- 登録を行えば投稿する事ができユーザーの一覧も見る事ができます</br>
+- 初めて利用される方に向け、トップページには概要を見るためのリンクをつけています  https://i.gyazo.com/314b82e0991c786f9ba7156883485a93.mp4 </br>
+- 他のユーザーが誰の投稿をお気に入りしているのかを見ることも可能です</br>
 
-* Configuration
 
-* Database creation
+***デモ***
 
-* Database initialization
+![デモ](https://image-url.gif)
 
-* How to run the test suite
+## 機能
 
-* Services (job queues, cache servers, search engines, etc.)
+- ログイン/ログアウト機能</br>
+- 投稿機能（投稿の編集、削除）</br>
+- お気に入り機能</br>
+- 登録しているユーザーの一覧表示</br>
+- どのユーザーが投稿したのかを見るための投稿一覧表示</br>
 
-* Deployment instructions
+## 製作意図
+投稿アプリがたくさんある中で私は不特定多数の人に投稿をみられるのではなく、登録を行なった物にししか投稿を閲覧できないようなアプリを作ってみたく製作してみました</br>
+投稿を行なった行くうちに、他のユーザの投稿が良いな、と思ったり場面があるかと思います。その時のためにもお気に入り機能もつけております、つけることによってあとでマイページに遷移した際にお気に入りしたユーザーと投稿を一覧として見る事ができる機能をつけました。
 
-* ...
+
+## 使用言語
+- フロント</br>
+HTML</br>
+SCC
+  
+- バックエンド</br>
+Ruby（ver 2.5.1）</br>
+Ruby on Rails(ver 5.0.7.2)</br>
+
+## DB
+- My SQL(Ver 14.14)</br>
+
+
+
+## 必要要件
+
+- 要件
+- 要件
+- 要件
+
+
+## 使い方
+
+1. 使い方
+2. 使い方
+3. 使い方
+
+
+
+
+## インストール
+
+```
+$ git clone 
+```
+
+
+## デプロイ
+
+1. デプロイ
+
+## その他
+
+
+
+## 作者
+
+[@cJvgXe2xaz7jJAd](https://twitter.com/cJvgXe2xaz7jJAd)
+
+## ライセンス
