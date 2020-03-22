@@ -1,5 +1,5 @@
 # README
-
+![image](https://user-images.githubusercontent.com/60649410/77246829-4e0e8c00-6c6e-11ea-9071-6251e6ebf152.png)
 # MY-PLACE
 
 ユーザー同士での投稿アプリ
