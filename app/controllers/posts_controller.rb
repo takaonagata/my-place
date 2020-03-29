@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find_by(id: params[:id])
     @user = @post.user
-    # # 変数@likes_countを定義してください
+    
     # @likes_count = Like.where(post_id :@post.id ).count
   end
   
