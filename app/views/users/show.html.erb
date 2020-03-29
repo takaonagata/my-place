@@ -10,7 +10,7 @@
     </div>
     <ul class="user-tabs">
       <li class="active"><%= link_to("投稿", "/users/#{@user.id}") %></li>
-      <li><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+      <li><%= link_to("お気に入り", "/users/#{@user.id}/likes") %></li>
     </ul>
     <% @user.posts.each do |post| %>
       <div class="posts-index-item">
